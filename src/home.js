@@ -1,5 +1,5 @@
 function createHomeSection(){
-    const home = document.createElement("div");
+    const homeSection = document.createElement("div");
     home.classList.add("home-section");
 
     const aboutInfo = document.createElement("p");
@@ -16,10 +16,12 @@ function createHomeSection(){
     orderLink.href = "#";
     orderLink.innerHTML = "Order Online";
 
-    home.appendChild(aboutInfo);
-    home.appendChild(coffeeImg);
-    home.appendChild(orderInfo);
+    homeSection.appendChild(aboutInfo);
+    homeSection.appendChild(coffeeImg);
+    homeSection.appendChild(orderInfo);
     orderInfo.appendChild(orderLink);
+    
+    return homeSection;
 }
 
 function loadHomeSection() {
