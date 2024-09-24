@@ -38,27 +38,27 @@ header {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    width: 1000px;
+    width: 800px;
     background-color: #634832;
     justify-content: center;
     border: 10px double #38220f;
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 4.5rem;
     color: #dbc1ac; 
 }
 
 nav {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     width: 600px;
 }
 
 button {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 10px double #38220f;
     cursor: pointer;
     padding: 10px 20px;
@@ -73,8 +73,8 @@ button:hover{
 }
 
 #content {
-    width: 1000px;
-    height: 550px;
+    width: 800px;
+    height: 500px;
     border: 10px double #38220f;
     background-color: #634832;
     color: #ece0d1;
