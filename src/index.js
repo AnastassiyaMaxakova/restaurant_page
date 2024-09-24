@@ -1,3 +1,3 @@
-import startWebpage from "./website";
+import startWebpage from "./website.js";
 
 startWebpage();
