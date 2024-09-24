@@ -16,10 +16,12 @@ function createHomeSection(){
     orderLink.href = "#";
     orderLink.innerHTML = "Order Online";
 
+    orderInfo.appendChild(orderLink);
+
     homeSection.appendChild(aboutInfo);
     homeSection.appendChild(coffeeImg);
     homeSection.appendChild(orderInfo);
-    orderInfo.appendChild(orderLink);
+    
     
     return homeSection;
 }
