@@ -4,7 +4,7 @@ function createMenuItem(name,imageName){
     menuItemBox.classList.add('menu-item');
 
     const itemImage = document.createElement('img');
-    itemImage.src = `/dist/images/${imageName}.webp`;
+    itemImage.src = `../src/images/${imageName}.webp`;
     itemImage.alt = `${imageName}`;
 
     const itemName = document.createElement("p");

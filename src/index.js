@@ -1,3 +1,4 @@
-import startWebpage from "./website.js";
+import startWebpage from "./webpage.js";
 
 startWebpage();
+
