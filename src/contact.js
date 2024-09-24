@@ -14,21 +14,6 @@ function createContactSection() {
 
     customerTitle.appendChild(customerSerLink);
 
-    const mediaInfo = document.createElement('h3');
-    mediaInfo.textContent = 'Media Contacts';
-
-    const mediaEmail = document.createElement('p');
-    mediaEmail.textContent = 'Email: press@coffeeshop.shop';
-
-    const mediaPhone = document.createElement('p');
-    mediaPhone.textContent = 'Phone: +1234 567 890';
-
-    const addressInfo = document.createElement('h3');
-    addressInfo.textContent = 'Our Address';
-
-    const address = document.createElement('p');
-    address.textContent = '1124 Pike St.';
-
     contactSection.appendChild(title);
 
     contactSection.appendChild(createH3Element('Customer Service'));
@@ -41,6 +26,7 @@ function createContactSection() {
     contactSection.appendChild(createH3Element("Our Address"));
     contactSection.appendChild(createPElement("1124 Pike St."));
 
+    return contactSection;
 }
 
 function createH3Element(description){

@@ -3,7 +3,7 @@ function createHomeSection(){
     homeSection.classList.add("home-section");
 
     const aboutInfo = document.createElement("p");
-    aboutInfo.textContent = "We serve a range of coffee made from the finest coffee beans, roasted right here in Cape Coral, and our baristas really know their beans.With their superior technical knowledge and a passion for making amazing coffee they will make you the perfect cup of coffee."
+    aboutInfo.textContent = "We serve a range of coffee made from the finest coffee beans, roasted right here, and our baristas really know their beans.With their superior technical knowledge and a passion for making amazing coffee they will make you the perfect cup of coffee."
 
     const coffeeImg = document.createElement("img");
     coffeeImg.classList.add('home-img')
