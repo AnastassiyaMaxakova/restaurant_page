@@ -35,6 +35,8 @@ body {
 }
 
 
+/*Header*/
+
 header {
     display: flex; 
     flex-direction: column;
@@ -81,6 +83,11 @@ button:hover{
     background-color: #6f5440;
 }
 
+button .active{
+    background-color: #6f5440;
+    color: #dbc1ac;
+}
+
 #content {
     width: 800px;
     height: 500px;
@@ -89,6 +96,9 @@ button:hover{
     color: #ece0d1;
     border-radius: 10px;
 }
+
+
+/*Home Section*/
 
 .home-section {
     display: flex;
@@ -108,6 +118,9 @@ button:hover{
     width: 200px;
     height: 200px;
 }
+
+
+/*Menu Section*/
 
 .menu-section {
     display: grid;
@@ -130,6 +143,9 @@ button:hover{
     color: #ece0d180;    
 }
 
+
+/*Contact Section*/
+
 .contact-section {
     padding: 20px;
 }
@@ -144,5 +160,4 @@ button:hover{
 
 .contact-section p{
     padding:5px;
-
 }
