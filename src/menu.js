@@ -1,12 +1,19 @@
-import '../src/style.css';
+import './style.css';
+import americanoImg from '../src/images/americano.webp';
+import cappuccinoImg from '../src/images/cappuccino.webp';
+import espressoImg from '../src/images/espresso_con_panna.webp';
+import latteImg from '../src/images/latte.webp';
+import lavender_latteImg from '../src/images/lavender_latte.webp';
+import macchiatoImg from '../src/images/macchiato.webp';
 
-function createMenuItem(name,imageName){
+
+function createMenuItem(name,imageSrc){
     const menuItemBox = document.createElement("div");
     menuItemBox.classList.add('menu-item');
 
-    const itemImage = document.createElement('img');
-    itemImage.src = `../src/images/${imageName}.webp`;
-    itemImage.alt = `${imageName}`;
+    const itemImage = new Image();
+    itemImage.src = imageSrc;
+    itemImage.alt = `${name}`;
 
     const itemName = document.createElement("p");
     itemName.textContent = name;
@@ -21,12 +28,12 @@ function createMenuSection() {
     const menuSection = document.createElement("div");
     menuSection.classList.add('menu-section');
 
-    menuSection.appendChild(createMenuItem('Americano','americano'));
-    menuSection.appendChild(createMenuItem('Cappuccino','cappuccino'));
-    menuSection.appendChild(createMenuItem('Espresso Con Panna','espresso_con_panna'));
-    menuSection.appendChild(createMenuItem('Latte','latte'));
-    menuSection.appendChild(createMenuItem('Lavender Latte','lavender_latte'));
-    menuSection.appendChild(createMenuItem('Macchiato','macchiato'));
+    menuSection.appendChild(createMenuItem('Americano', americanoImg));
+    menuSection.appendChild(createMenuItem('Cappuccino', cappuccinoImg));
+    menuSection.appendChild(createMenuItem('Espresso Con Panna', espressoImg));
+    menuSection.appendChild(createMenuItem('Latte', latteImg));
+    menuSection.appendChild(createMenuItem('Lavender Latte', lavender_latteImg));
+    menuSection.appendChild(createMenuItem('Macchiato', macchiatoImg));
 
     return menuSection;
 }

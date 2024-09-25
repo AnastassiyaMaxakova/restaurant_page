@@ -1,4 +1,5 @@
 import './style.css';
+import coffeeGif from './images/coffee-animated-gif-5.gif';
 
 function createHomeSection(){
     const homeSection = document.createElement("div");
@@ -7,9 +8,9 @@ function createHomeSection(){
     const aboutInfo = document.createElement("p");
     aboutInfo.textContent = "We serve a range of coffee made from the finest coffee beans, roasted right here, and our baristas really know their beans.With their superior technical knowledge and a passion for making amazing coffee they will make you the perfect cup of coffee."
 
-    const coffeeImg = document.createElement("img");
+    const coffeeImg = new Image();
+    coffeeImg.src = coffeeGif;
     coffeeImg.classList.add('home-img')
-    coffeeImg.src = "../src/images/coffee-animated-gif-5.gif";
     coffeeImg.alt = "Coffee Cup"
 
     const orderInfo = document.createElement("p");

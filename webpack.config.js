@@ -9,6 +9,7 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+        assetModuleFilename: 'images/[hash][ext][query]',
     },
     devtool: 'inline-source-map',
     plugins : [
