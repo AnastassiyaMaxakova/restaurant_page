@@ -1,6 +1,7 @@
 import loadHomeSection from "./home.js";
 import loadMenuSection from "./menu.js";
 import loadContactSection from "./contact.js";
+import './style.css';
 
 const buttons = document.querySelectorAll('button');
 

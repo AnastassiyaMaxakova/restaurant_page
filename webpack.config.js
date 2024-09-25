@@ -1,5 +1,6 @@
 const { userInfo } = require('os');
 const path = require('path');
+const HtmlWebpackPlugin  = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -10,6 +11,12 @@ module.exports = {
         clean: true,
     },
     devtool: 'inline-source-map',
+    plugins : [
+        new HtmlWebpackPlugin({
+            title: 'Coffee shop',
+            template: "./src/template.html"
+        }),
+    ],
     module: {
         rules: [
             {

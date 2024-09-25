@@ -1,3 +1,4 @@
+import '../src/style.css';
 
 function createMenuItem(name,imageName){
     const menuItemBox = document.createElement("div");

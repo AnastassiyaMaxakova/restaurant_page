@@ -1,3 +1,5 @@
+import './style.css';
+
 function createHomeSection(){
     const homeSection = document.createElement("div");
     homeSection.classList.add("home-section");

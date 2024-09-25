@@ -1,3 +1,5 @@
+import './style.css';
+
 function createContactSection() {
     const contactSection = document.createElement('div');
     contactSection.classList.add('contact-section');
