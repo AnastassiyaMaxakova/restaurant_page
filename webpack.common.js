@@ -3,7 +3,6 @@ const path = require('path');
 const HtmlWebpackPlugin  = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     entry:'./src/index.js',
     output: {
         filename: 'main.js',
@@ -11,7 +10,6 @@ module.exports = {
         clean: true,
         assetModuleFilename: 'images/[hash][ext][query]',
     },
-    devtool: 'inline-source-map',
     plugins : [
         new HtmlWebpackPlugin({
             title: 'Coffee shop',
@@ -27,7 +25,7 @@ module.exports = {
             {
                 test: /\.(png|jpeg|webp|svg|gif|jpg)$/i,
                 type: 'asset/resource',
-
+    
             },
         ],
     },
