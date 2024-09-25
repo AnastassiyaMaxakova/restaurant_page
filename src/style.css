@@ -161,3 +161,82 @@ button:hover{
 .contact-section p{
     padding:5px;
 }
+
+/* Media query*/
+
+@media only screen and (max-width: 800px) {
+    body {
+        height: 100vh;
+    }
+
+    .logo-info {
+        width: 500px;
+        margin-bottom:5px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    nav {
+        padding-bottom: 5px;
+        width: 400px;
+    }
+    
+    button {
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
+
+
+    #content {
+        width: 500px;
+        height: 450px;
+
+    }
+
+    .home-section {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .home-section p {
+        font-size: 1rem;
+    }
+    
+    .home-img {
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+    }
+
+    .menu-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding-top: 10px;
+    }
+    
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-section {
+        text-align: center;
+    }
+    
+    .contact-section h3{
+        padding: 20px;
+        font-size: 1rem;
+    }
+    
+    .contact-section p{
+        font-size: 0.7rem
+    }
+}
+
